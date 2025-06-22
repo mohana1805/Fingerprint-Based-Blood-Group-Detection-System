@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div class="about">
+  <h1 class="about-us-heading">About Us</h1>
+  <div class="about-us">
+    <div class="developer developer-girl">
+      <div></div>
+      <a href="https://www.linkedin.com/in/mohana-pusuluru-5b643a1b9/" class="developer-link" target="_blank">
+        <h2 class="name pnmr">P.Mohana</h2>
+      </a>
+      <p class="idnum">22241A0446</p>
+    </div>
+    <div class="developer developer-girl">
+      <div></div>
+      <a href="https://www.linkedin.com/in/kethana-thummala-953696274/" class="developer-link" target="_blank">
+        <h2 class="name">T.Kethana</h2>
+      </a>
+      <p class="idnum">22241A0456</p>
+    </div>
+    <div class="developer">
+      <div></div>
+      <a href="https://www.linkedin.com/in/phemachandra" class="developer-link" target="_blank">
+        <h2 class="name">P.Hema Chandra</h2>
+      </a>
+      <p class="idnum">22241A0438</p>
+    </div>
+  </div>
+</div>
+
+<!-- CSS styles inside the HTML file -->
+<style>
+  /* Remove the default underline from links */
+  .developer-link {
+    text-decoration: none;  /* Remove default underline */
+    color: inherit;         /* Inherit color from the surrounding text */
+    font-weight: bold;      /* Optional: make the text bold */
+  }
+
+  /* Add custom underline effect on hover */
+  .developer-link:hover .name {
+    border-bottom: 2px solid #0077b5;  /* Underline with color on hover */
+    padding-bottom: 2px;  /* Add padding to give a space between text and underline */
+  }
+
+  /* Optional: Style the name further if needed */
+  .name {
+    transition: all 0.3s ease;  /* Smooth transition for hover effect */
+  }
+</style>
+
+{% endblock %}

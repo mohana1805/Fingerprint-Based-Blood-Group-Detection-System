@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock %}
+
+{% block content %}
+<style>
+  .about_project {
+  max-width: 900px;
+  margin: 2rem auto; /* Centers the entire box */
+  padding: 2rem;
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: left; /* Ensures the text is aligned to the left */
+  display: block; /* Ensures the content is laid out as a block */
+}
+
+
+  .about_project h1 {
+    text-align: center;
+    color: #e91e63;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about_project h2 {
+    margin-top: 1.5rem;
+    color: #ff4081;
+    font-size: 1.4rem;
+  }
+
+  .about_project p {
+    margin: 1rem 0;
+    text-align: justify;
+  }
+
+  .about_project ul {
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .about_project li {
+    margin-bottom: 1rem;
+  }
+
+  .about_project li h3 {
+    margin-bottom: 0.3rem;
+    color: #f06292;
+    font-size: 1.1rem;
+  }
+  /* Enhanced Note Box */
+  .about_project .note {
+    background-color: #9ea94e; /* Light red background for better contrast */
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    color: #d32f2f; /* Dark red text for better readability */
+    border: 1px solid #1b1413; /* Darker red border */
+  }
+</style>
+
+<div class="about_project">
+  <h1>About the Project</h1>
+
+  <h2>Overview</h2>
+  <p>
+    This project explores a novel and non-invasive method for predicting blood groups using fingerprint images processed by a Convolutional Neural Network (CNN), specifically the LeNet architecture. While there is no established scientific evidence directly linking fingerprint patterns to blood groups, this study attempts to analyze and learn from fingerprint features to identify potential patterns. The model is trained on a custom dataset of labeled fingerprint images.
+  </p>
+
+
+  <h2>Advantages</h2>
+  <p>
+    This system offers several advantages. It helps rural populations by determining their blood group with minimal medical resources and without the need for trained experts, benefiting those who fear needles. It also aids blood donation camps by efficiently identifying blood groups. Additionally, our system provides blood transfusion compatibility services and personalized nutrition recommendations based on blood group, enhancing its practical utility and impact.
+  </p>
+
+  <h2>Limitations</h2>
+  <ul>
+    <li>
+      <h3>Accuracy Concerns:</h3>
+      The method may not achieve the same level of accuracy as traditional blood tests, potentially leading to misclassification of blood groups.
+    </li>
+    <li>
+      <h3>Data Variability:</h3>
+      Fingerprint patterns can vary significantly among individuals, and establishing a consistent correlation with blood groups might be a challenging task.
+    </li>
+    <li>
+      <h3>Technical Challenges:</h3>
+      Developing a robust machine learning model requires extensive and high-quality data, which can be difficult to collect and process.
+    </li>
+    <li>
+      <h3>Cost and Accessibility of Technology:</h3>
+      While the method aims to eliminate specialized equipment, the initial development and deployment of the technology might be costly and require advanced infrastructure.
+    </li>
+  </ul>
+  <div class="note">
+    <p><strong>Note:</strong> While this approach is groundbreaking, further research and refinement are needed to improve accuracy, scalability, and accessibility to maximize its potential impact in medical settings.</p>
+  </div>
+</div>
+{% endblock %}
